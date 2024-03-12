@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <style name="CommonTheme" parent="Theme.MaterialComponents.Light">
+
+    </style>
+
+    <style name="StatusText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginHorizontal" tools:ignore="NewApi">16dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+</resources>

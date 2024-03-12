@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
+        // 仓库
+        maven {
+            url '/Users/xijue/Desktop/workspace/code/mmopensdk-repository'
+        }
+        // webrtc
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+rootProject.name = "MinimaxOpenSDKDemo"
+include ':app'
