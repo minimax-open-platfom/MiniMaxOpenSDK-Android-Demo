@@ -13,9 +13,8 @@ dependencyResolutionManagement {
         flatDir {
             dirs 'libs'
         }
-        // 仓库
         maven {
-            url '/Users/xijue/Desktop/workspace/code/mmopensdk-repository'
+            url 'https://raw.githubusercontent.com/minimax-open-platfom/MiniMaxOpenSDK-Android-Repo/master'
         }
         // webrtc
         maven { url 'https://jitpack.io' }
