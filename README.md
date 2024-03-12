@@ -1,1 +1,1 @@
-[截图]()
+![截图](https://raw.githubusercontent.com/minimax-open-platfom/MiniMaxOpenSDK-Android-Demo/master/art/screenshot.jpeg)
