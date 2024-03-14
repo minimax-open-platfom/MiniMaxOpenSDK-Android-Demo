@@ -1,12 +1,19 @@
 ## OpenSDK-Demo
 
-com.minimax.opensdk_android:voice 依赖
+MiniMax开放平台语音通话SDK  依赖
 
-targetSdkVersion 32
-minSdkVersion 20
-coroutine 1.6.4
-androidX
-okhttp 4.11.0
+targetSdkVersion 32  
+
+minSdkVersion 20  
+
+Kotlin  
+
+coroutine 1.6.4  
+
+androidX  
+
+okhttp 4.11.0  
+
 android-vad:webrtc
 
 ## 能力支持
