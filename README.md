@@ -179,6 +179,8 @@ fun isListening(): Boolean
 发送语音并流式播放返回的语音消息。最关键的是需要在 streamParams 里手动传一个音频文件转 hex 后的字符串。输入的文件类型目前支持 wav/mp3 。
 可以通过 streamParams.t2aOption.format 字段设置输出的音频格式，目前支持 mp3/flac 。
 
+注意 Content-Type 和 Authorization 会在 sdk 内部封装，不需要在 customHeader 里传入，customHeader 是为了方便扩展使用，默认不传或者传空都可。
+
 ```
 /**
   @param streamParams 语音通话请求参数
