@@ -45,7 +45,7 @@ repositories {
 
 ```
 dependencies {
-    implementation "com.minimax.opensdk_android:voice_call:1.0.1"
+    implementation "com.minimax.opensdk_android:voice_call:1.0.2"
 }
 ```
 

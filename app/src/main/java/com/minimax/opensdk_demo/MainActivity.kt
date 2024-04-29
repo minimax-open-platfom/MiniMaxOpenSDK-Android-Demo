@@ -133,10 +133,12 @@ class MainActivity : FragmentActivity(),
                         t2aOption = T2aOption(
                             model = "speech-01",
                             voiceId = "male-qn-qingse",
+                            customParams = emptyMap()
                         ),
                         tools = listOf(
                             Tool(type = "web_search")
-                        )
+                        ),
+                        customParams = emptyMap()
                     ),
                     listener = object : VoiceCallMsgListener {
                         override fun onRequestStart() {
