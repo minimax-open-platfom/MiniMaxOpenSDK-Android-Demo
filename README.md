@@ -213,6 +213,9 @@ interface VoiceCallMsgListener {
 
   // 流程结束，无论是请求失败还是播放完成，均会走到 onComplete 接口
   fun onComplete()
+
+  // 返回 traceId 方便排查问题
+  fun onTraceId(traceId: String)
 }
 
 enum class Reason(
