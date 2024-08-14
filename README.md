@@ -216,6 +216,15 @@ interface VoiceCallMsgListener {
 
   // 返回 traceId 方便排查问题
   fun onTraceId(traceId: String)
+  
+  // 收到了语音识别文本
+  fun onAsrTextReceived(asrText: String)
+
+  // 收到了语音回复的文本，分段输出，每次回调新增的文本
+  fun onReplyTextReceived(replyText: String)
+  
+  // 语音回复文本结束
+  fun onReplyTextEnd()
 }
 
 enum class Reason(

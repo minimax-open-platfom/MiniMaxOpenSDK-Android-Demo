@@ -55,6 +55,10 @@ class MainActivity : FragmentActivity(),
 
     val audioDecodeCost = MutableLiveData<Long>(0)
 
+    val asrText = MutableLiveData<String?>()
+
+    val replyText = MutableLiveData<String?>()
+
     override fun context(): Context {
         return this
     }
@@ -186,6 +190,21 @@ class MainActivity : FragmentActivity(),
                             Logger.i(LOG_TAG) {
                                 "onComplete"
                             }
+                        }
+
+                        override fun onAsrTextReceived(asrText: String) {
+                            this@MainActivity.asrText.postValue(asrText)
+                            this@MainActivity.replyText.postValue("")
+                        }
+
+                        override fun onReplyTextReceived(replyText: String) {
+                            val replyPart = this@MainActivity.replyText.value
+                            this@MainActivity.replyText.postValue(replyPart + replyText)
+                        }
+
+                        override fun onReplyTextEnd() {
+                            val replyPart = this@MainActivity.replyText.value
+                            this@MainActivity.replyText.postValue(replyPart + "\n回复结束")
                         }
                     }
                 )
